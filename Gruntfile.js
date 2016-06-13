@@ -41,7 +41,7 @@ module.exports = function (grunt) {
             expand: true,
             src: '**',
             cwd: 'node_modules/govuk_template_mustache/assets',
-            dest: 'govuk_modules/public/'
+            dest: 'govuk_modules/govuk_template/assets'
           }
         ]
       },
