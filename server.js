@@ -15,6 +15,12 @@ app.use('/public', express.static(__dirname + '/govuk_modules/public'));
 app.use(express.json());       // to support JSON-encoded bodies
 app.use(express.urlencoded()); // to support URL-encoded bodies
 
+// send assetPath to all views
+app.use(function (req, res, next) {
+  res.locals.asset_path="/public/";
+  next();
+});
+
 // routes (found in routes.js)
 
 routes.bind(app, '/public/');
