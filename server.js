@@ -18,7 +18,7 @@ app.use(express.urlencoded()); // to support URL-encoded bodies
 
 // send assetPath to all views
 app.use(function (req, res, next) {
-  res.locals.asset_path="/public/";
+  res.locals.assetPath="/public/";
   next();
 });
 
