@@ -8,7 +8,7 @@ var bodyParser = require('body-parser'),
 // Application settings
 app.engine('html', require(__dirname + '/lib/template-engine.js').__express);
 app.set('view engine', 'html');
-app.set('vendorViews', __dirname + '/govuk_modules/views');
+app.set('vendorViews', __dirname + '/govuk_modules/govuk_template/views/layouts');
 app.set('views', __dirname + '/app/views');
 
 // Middleware to serve static assets
